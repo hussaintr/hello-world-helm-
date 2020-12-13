@@ -6,7 +6,7 @@ echo "********************************************************"
 echo "  Launching Helm Chart "
 echo "********************************************************"
 
-helm install ${appName} $PWD/hello-world/
+helm install ${appName} $PWD/helm/hello-world/
 
 
 echo "*********************************************************"
