@@ -5,6 +5,7 @@
    
    # Prerequisites 
       
+     - Git 
      - Docker 1.13.1
      - Helm 3.4.2
      - MiniKube 1.15.1
@@ -12,3 +13,7 @@
      - PV provisioner support in the underlying infrastructure
      
    # Steps To Run The Application
+   
+       git clone https://github.com/hussaintr/simple-web-app.git
+   
+       
