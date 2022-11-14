@@ -21,12 +21,13 @@ with DAG(
 ) as dag:
     create_cluster=DataprocClusterCreateOperator(
         task_id='create_cluster',
-        project_id='Give project ID',
+        project_id='virtual-metrics-368401',
         cluster_name='spark-cluster-{{ds_nodash}}',
         num_workers=2,
         worker_machine_type='n1-standard-2',
         storage_bucket="dataproc-pyspark-bucket",
-        zone="zone info",
+        region="us-central1"
+        zone="us-central1-a",
     )
 
 
