@@ -26,7 +26,7 @@ with DAG(
         num_workers=2,
         worker_machine_type='n1-standard-2',
         storage_bucket="dataproc-pyspark-bucket",
-        region="us-central1"
+        region="us-central1",
         zone="us-central1-a",
     )
 
