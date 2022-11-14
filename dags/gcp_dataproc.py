@@ -6,12 +6,12 @@ from airflow.contrib.operators.dataproc_operator import (
 )
 
 PROJECT_ID = 'virtual-metrics-368401'
-CLUSTER_NAME = 'example-project'
+CLUSTER_NAME = 'airflow-cluster'
 REGION = 'us-central1'
 ZONE = 'us-central1-a'
 
 with models.DAG(
-    "example_gcp_dataproc_create_cluster",
+    "Dataproc_create_delete_cluster",
     default_args={"start_date": airflow.utils.dates.days_ago(1)},
     schedule_interval=None,
 ) as dag:
